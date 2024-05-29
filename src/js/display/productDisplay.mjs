@@ -26,7 +26,6 @@ export async function displayProducts() {
   );
 
   if (remainingProducts.length === 0) {
-    // alert("All products have been shown.");
     productContainer.innerHTML = `<div class="p-3">Ikke flere produkter igjen</div>
     <button id="btnHome" class="btn btn-primary m-3">Gå til forsiden</button>`;
     const btnHome = document.getElementById("btnHome");
@@ -107,19 +106,47 @@ export async function displayProducts() {
 
   const inputNumberElement = document.getElementById("productNumber");
   const correctNumberBox = document.createElement("div");
-  //   inputNumberElement.value = "";
 
   correctNumberBox.id = "correctNumberBox";
   correctNumberBox.innerText = `Correct number: ${product.EAN}`;
   formDivArea.appendChild(correctNumberBox);
   correctNumberBox.style.display = "none";
 
-  // Input area
-  btnNext.style.display = "none";
   btnCheck.addEventListener("click", (event) => {
     event.preventDefault();
     console.log("hello");
     handlers.setCheckForm(product);
+  });
+  btnNext.addEventListener("click", (event) => {
+    displayProducts();
+  });
+  let touchstartX = 0;
+  let touchendX = 0;
+  let isSwiping = false;
+
+  function handleGesture() {
+    const screenWidth = window.innerWidth;
+    const swipeDistance = touchstartX - touchendX;
+
+    if (swipeDistance > screenWidth / 2) {
+      if (!isSwiping) {
+        isSwiping = true;
+        displayProducts();
+
+        setTimeout(() => {
+          isSwiping = false;
+        }, 1000);
+      }
+    }
+  }
+
+  productContainer.addEventListener("touchstart", function (event) {
+    touchstartX = event.changedTouches[0].screenX;
+  });
+
+  productContainer.addEventListener("touchend", function (event) {
+    touchendX = event.changedTouches[0].screenX;
+    handleGesture();
   });
 
   productCard.appendChild(card);
