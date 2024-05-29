@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Banan",
+        "EAN": 4011,
+        "image": "https://res.cloudinary.com/norgesgruppen/image/upload/f_auto,q_auto:eco/qnravaqh6dchff2jzajt"
+    },
+    {
+        "id": 2,
+        "name": "Gult eple",
+        "EAN": 4021,
+        "image": "https://julebygda.no/content/uploads/2021/02/200024-epler-golden.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Rødt eple",
+        "EAN": 4205,
+        "image": "https://bilder.ngdata.no/4015/meny/medium.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Grønnt eple",
+        "EAN": 4139,
+        "image": "https://bilder.ngdata.no/4139/meny/large.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Agurk",
+        "EAN": 4316,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/5/gartner-agurk.jpg"
+    }
+]
