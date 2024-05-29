@@ -3,5 +3,6 @@ import * as handlers from "./handlers/index.mjs";
 
 const currentUrl = window.location.href;
 
-display.displayProducts();
-// handlers.setCheckForm();
+if (currentUrl.includes(`html/productpugg.html`) ) {
+    display.displayProducts();
+}
