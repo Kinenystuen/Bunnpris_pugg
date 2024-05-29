@@ -67,6 +67,9 @@ input:invalid + .help {
     background-color: #f8f9fa; 
   }
 
-.custom-max-width {
+.max-width-400 {
     max-width: 400px;
+}
+.max-height-50vh {
+    max-height: 50vh;
 }
