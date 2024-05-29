@@ -2,8 +2,8 @@ import { fetchData } from "../api/feed.mjs";
 import * as handlers from "./../handlers/index.mjs";
 import { clearHTML } from "../utilitis.mjs/clearHTML.mjs";
 
-const checkForm = document.getElementById("checkForm");
-const nextBtn = document.getElementById("nextBtn");
+// const checkForm = document.getElementById("checkForm");
+// const nextBtn = document.getElementById("nextBtn");
 
 const shownProducts = new Set();
 export async function displayProducts() {
@@ -12,20 +12,6 @@ export async function displayProducts() {
 
   const productContainer = document.getElementById("card");
   clearHTML(productContainer);
-
-  const remainingProducts = data.filter(
-    (product) => !shownProducts.has(product.id)
-  );
-
-  if (remainingProducts.length === 0) {
-    alert("All products have been shown.");
-    window.location.href = "../index.html";
-    return;
-  }
-  const product =
-    remainingProducts[Math.floor(Math.random() * remainingProducts.length)];
-  shownProducts.add(product.id);
-
   productContainer.classList.add(
     "card",
     "w-75",
@@ -34,6 +20,24 @@ export async function displayProducts() {
     "d-flex",
     "justify-content-center"
   );
+
+  const remainingProducts = data.filter(
+    (product) => !shownProducts.has(product.id)
+  );
+
+  if (remainingProducts.length === 0) {
+    // alert("All products have been shown.");
+    productContainer.innerHTML = `<div class="p-3">Ikke flere produkter igjen</div>
+    <button id="btnHome" class="btn btn-primary m-3">Gå til forsiden</button>`;
+    const btnHome = document.getElementById("btnHome");
+    btnHome.addEventListener("click", (event) => {
+      window.location.href = "../index.html";
+    });
+    return;
+  }
+  const product =
+    remainingProducts[Math.floor(Math.random() * remainingProducts.length)];
+  shownProducts.add(product.id);
 
   const productCard = document.createElement("div");
   const productName = document.createElement("h2");
