@@ -16,8 +16,10 @@ export async function displayProducts() {
     "w-75",
     "m-3",
     "max-width-400",
+    "max-height-90vh",
+    "overflow-auto",
     "d-flex",
-    "justify-content-center"
+    "justify-content-between"
   );
 
   const remainingProducts = data.filter(
@@ -45,7 +47,7 @@ export async function displayProducts() {
   productCard.classList.add("card-body", "d-flex", "justify-content-center");
   productCount.classList.add("d-flex","justify-content-end","p-2","text-small");
   productName.classList.add("card.title", "d-flex", "justify-content-center");
-  productImg.classList.add("card-img", "object-fit-cover");
+  productImg.classList.add("img-fluid");
 
   count += 1;
   productCount.innerHTML = `${count}/${data.length}`
@@ -86,19 +88,21 @@ export async function displayProducts() {
   formInput.classList.add("form-control");
 
   // Btn's
-  btnDiv.classList.add("d-flex", "justify-content-between");
+  btnDiv.classList.add("d-flex", "justify-content-between","gap-1");
   btnCheck.id = "checkBtn";
   btnCheck.innerText = "Check";
   btnCheck.classList.add(
     "btn",
     "btn-success",
+    "btn-lg",
+    "w-100",
     "my-2",
     "justify-content-center"
   );
   btnCheck.setAttribute("type", "submit");
   btnNext.id = "nextBtn";
   btnNext.innerText = "Next";
-  btnNext.classList.add("btn", "btn-primary", "my-2", "justify-content-center");
+  btnNext.classList.add("btn", "btn-primary","btn-lg", "my-2", "justify-content-center");
   btnNext.setAttribute("type", "submit");
 
   checkForm.appendChild(formLabel);
