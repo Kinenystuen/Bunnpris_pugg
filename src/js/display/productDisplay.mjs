@@ -2,8 +2,7 @@ import { fetchData } from "../api/feed.mjs";
 import * as handlers from "./../handlers/index.mjs";
 import { clearHTML } from "../utilitis.mjs/clearHTML.mjs";
 
-// const checkForm = document.getElementById("checkForm");
-// const nextBtn = document.getElementById("nextBtn");
+let count = 0;
 
 const shownProducts = new Set();
 export async function displayProducts() {
@@ -39,13 +38,17 @@ export async function displayProducts() {
   shownProducts.add(product.id);
 
   const productCard = document.createElement("div");
+  const productCount = document.createElement("small");
   const productName = document.createElement("h2");
   const productImg = document.createElement("img");
 
   productCard.classList.add("card-body", "d-flex", "justify-content-center");
+  productCount.classList.add("d-flex","justify-content-end","p-2","text-small");
   productName.classList.add("card.title", "d-flex", "justify-content-center");
   productImg.classList.add("card-img", "object-fit-cover");
 
+  count += 1;
+  productCount.innerHTML = `${count}/${data.length}`
   productName.textContent = product.name;
 
   productImg.src = product.image;
@@ -54,6 +57,7 @@ export async function displayProducts() {
   const card = document.createElement("div");
   card.classList.add("product-card");
 
+  card.appendChild(productCount);
   card.appendChild(productName);
   card.appendChild(productImg);
 
