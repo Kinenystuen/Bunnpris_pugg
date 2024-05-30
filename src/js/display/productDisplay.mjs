@@ -143,6 +143,13 @@ export async function displayProducts() {
       handlers.setCheckForm(product);
     }
   });
+  // Event listener for checking number when 4 numbers is entered
+  formInput.addEventListener("keyup", (event) => {
+    if (formInput.value.length === 4) {
+      event.preventDefault();
+      handlers.setCheckForm(product);
+    }
+  });
 
   btnNext.addEventListener("click", (event) => {
     displayProducts();
