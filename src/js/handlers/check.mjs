@@ -23,6 +23,4 @@ export function setCheckForm(product) {
       correctNumberBox.style.display = "block";
 
   }
-
-    console.log(product.EAN)
 }
