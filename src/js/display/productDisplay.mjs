@@ -53,7 +53,8 @@ export async function displayProducts() {
     "text-small"
   );
   productName.classList.add("card.title", "d-flex", "justify-content-center");
-  productImg.classList.add("img-fluid");
+  productImg.classList.add("img-fluid","max-height-200",
+  "object-fit-contain","mx-auto","w-100");
 
   count += 1;
   productCount.innerHTML = `${count}/${data.length}`;
@@ -63,7 +64,7 @@ export async function displayProducts() {
   productImg.alt = `Image of ${product.name}`;
 
   const card = document.createElement("div");
-  card.classList.add("product-card");
+  card.classList.add("product-card","w-100");
 
   card.appendChild(productCount);
   card.appendChild(productName);
