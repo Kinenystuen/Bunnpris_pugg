@@ -147,34 +147,34 @@ export async function displayProducts() {
   btnNext.addEventListener("click", (event) => {
     displayProducts();
   });
-  let touchstartX = 0;
-  let touchendX = 0;
-  let isSwiping = false;
+//   let touchstartX = 0;
+//   let touchendX = 0;
+//   let isSwiping = false;
 
-  function handleGesture() {
-    const screenWidth = window.innerWidth;
-    const swipeDistance = touchstartX - touchendX;
+//   function handleGesture() {
+//     const screenWidth = window.innerWidth;
+//     const swipeDistance = touchstartX - touchendX;
 
-    if (swipeDistance > screenWidth / 2) {
-      if (!isSwiping) {
-        isSwiping = true;
-        displayProducts();
+//     if (swipeDistance > screenWidth / 2) {
+//       if (!isSwiping) {
+//         isSwiping = true;
+//         displayProducts();
 
-        setTimeout(() => {
-          isSwiping = false;
-        }, 1000);
-      }
-    }
-  }
+//         setTimeout(() => {
+//           isSwiping = false;
+//         }, 1000);
+//       }
+//     }
+//   }
 
-  productContainer.addEventListener("touchstart", function (event) {
-    touchstartX = event.changedTouches[0].screenX;
-  });
+//   productContainer.addEventListener("touchstart", function (event) {
+//     touchstartX = event.changedTouches[0].screenX;
+//   });
 
-  productContainer.addEventListener("touchend", function (event) {
-    touchendX = event.changedTouches[0].screenX;
-    handleGesture();
-  });
+//   productContainer.addEventListener("touchend", function (event) {
+//     touchendX = event.changedTouches[0].screenX;
+//     handleGesture();
+//   });
 
   productCard.appendChild(card);
   productContainer.appendChild(productCard);
