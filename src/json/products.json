@@ -1,32 +1,207 @@
 [
+    
     {
         "id": 1,
+        "name": "Agurk",
+        "EAN": 4316,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/5/gartner-agurk.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ananas",
+        "EAN": 4430,
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8mttJq2El6Dydzya7K3gx1vNeyCjRnW-xg20-iCbZMkcpuuor"
+    },
+    {
+        "id": 3,
+        "name": "Appelsiner pr kg",
+        "EAN": 4195,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/appelsin.jpg?height=620&mode=pad"
+    },
+    {
+        "id": 4,
+        "name": "Avocado pr stk",
+        "EAN": 4222,
+        "image": "https://media.snl.no/media/32446/standard_standard_shutterstock_358758050-t3_1_.png"
+    },
+    {
+        "id": 5,
         "name": "Banan",
         "EAN": 4011,
         "image": "https://res.cloudinary.com/norgesgruppen/image/upload/f_auto,q_auto:eco/qnravaqh6dchff2jzajt"
     },
     {
-        "id": 2,
-        "name": "Gult eple",
-        "EAN": 4021,
-        "image": "https://julebygda.no/content/uploads/2021/02/200024-epler-golden.jpg"
+        "id": 6,
+        "name": "Champignon løs vekt",
+        "EAN": 4645,
+        "image": "https://bilder.ngdata.no/4645/meny/large.jpg"
     },
     {
-        "id": 3,
-        "name": "Rødt eple",
-        "EAN": 4205,
-        "image": "https://bilder.ngdata.no/4015/meny/medium.jpg"
-    },
-    {
-        "id": 4,
+        "id": 7,
         "name": "Grønnt eple",
         "EAN": 4139,
         "image": "https://bilder.ngdata.no/4139/meny/large.jpg"
     },
     {
-        "id": 5,
-        "name": "Agurk",
-        "EAN": 4316,
-        "image": "https://www.bama.no/siteassets/fotoware/2020/5/gartner-agurk.jpg"
+        "id": 8,
+        "name": "Gult eple",
+        "EAN": 4021,
+        "image": "https://julebygda.no/content/uploads/2021/02/200024-epler-golden.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Rødt eple",
+        "EAN": 4205,
+        "image": "https://bilder.ngdata.no/4015/meny/medium.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Granateple pr stk",
+        "EAN": 4445,
+        "image": "https://res.cloudinary.com/norgesgruppen/images/c_scale,dpr_auto,f_auto,q_auto:eco,w_720/mi4bgir7zrayxxzi2rlq/granateple-bestar-av-flere-kammer-med-mange-fro"
+    },
+    {
+        "id": 11,
+        "name": "Hodekål pr kg",
+        "EAN": 3050,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/hodekaal---hel.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Honningmelon pr kg",
+        "EAN": 4317,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/9/honningmelon_12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Jordbær pr kurv",
+        "EAN": 4197,
+        "image": "https://bilder.ngdata.no/4197/kmh/large.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Kiwi pr stk",
+        "EAN": 4030,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ldxcNoF34BRrO8zaBM7S4mcjRIXV3VF0gw&s"
+    },
+    {
+        "id": 15,
+        "name": "Klementiner pr kg",
+        "EAN": 4055,
+        "image": "https://media.snl.no/media/268699/article_topimage_klementin.png"
+    },
+    {
+        "id": 16,
+        "name": "Kålrot",
+        "EAN": 4747,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/kaalrot---delt.jpg?height=620&mode=pad"
+    },
+    {
+        "id": 17,
+        "name": "Lime pr kg",
+        "EAN": 4048,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/lime_j3a3944.jpg?height=620&mode=pad"
+    },
+    {
+        "id": 18,
+        "name": "Løk pr kg",
+        "EAN": 4358,
+        "image": "https://shared.cdn.smp.schibsted.com/v2/images/747b735a-ccac-4615-a6d5-40e036c94630?fit=crop&format=auto&h=1400&w=2000&s=129fe8d732ae8a09c35fffae857318b19910602e"
+    },
+    {
+        "id": 19,
+        "name": "Mandelpotet løs vekt",
+        "EAN": 4365,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/9/mandel-borstet-hel-og-halv.jpg?height=620&mode=pad"
+    },
+    {
+        "id": 20,
+        "name": "Mango pr stk",
+        "EAN": 4311,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/9/mango.jpg?height=620&mode=pad"
+    },
+    {
+        "id": 21,
+        "name": "Melon cantaloupe pr kg",
+        "EAN": 4327,
+        "image": "https://www.plantasjen.no/dw/image/v2/BCMR_PRD/on/demandware.static/-/Sites-inriver-catalog/default/dwc2fa0425/images/large/534935-Melon%20-%20Cantalope%20a.jpg?sh=618&sfrm=jpg"
+    },
+    {
+        "id": 22,
+        "name": "Nykål",
+        "EAN": 3051,
+        "image": "https://res.cloudinary.com/norgesgruppen/image/upload/c_fill,f_auto,h_439,q_auto,w_780/dgxmwgq7wljxg0cvydqw.png"
+    },
+    {
+        "id": 23,
+        "name": "Paprika rød pr kg",
+        "EAN": 4088,
+        "image": "https://www.med.uio.no/imb/forskning/prosjekter/bra-studien/ressurser/bilder/roed_paprika_507.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Poteter løs vekt",
+        "EAN": 4073,
+        "image": "https://img.hellofresh.com/w_3840,q_auto,f_auto,c_limit,fl_lossy/hellofresh_website/no/cms/SEO/lars-blankers-B0s3Xndk6tw-unsplash.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Purre pr kg",
+        "EAN": 4629,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/purre---bunt.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Pærer pr kg",
+        "EAN": 3017,
+        "image": "https://bilder.ngdata.no/3017/meny/large.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Salatbar",
+        "EAN": 7055,
+        "image": "https://bilder.ngdata.no/4470/meny/large.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Sitron pr kg",
+        "EAN": 4033,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/lemon-gold_j3a4194.jpg?height=620&mode=pad"
+    },
+    {
+        "id": 29,
+        "name": "Squash pr stk",
+        "EAN": 4067,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/squash---groenn.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Søtpoteter",
+        "EAN": 4091,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/64440905_soetpotet_losvekt_bare.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Tomater pr kg",
+        "EAN": 4064,
+        "image": "https://shared.cdn.smp.schibsted.com/v2/images/472d0b4e-5d84-4f45-83d0-54219bc62e16?fit=crop&format=auto&h=476&w=848&s=ef126831490a1d6c5199672fe67dd8629653ec67"
+    },
+    {
+        "id": 32,
+        "name": "Vannmelon hel",
+        "EAN": 4035,
+        "image": "https://bilder.ngdata.no/4032/meny/medium.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Vannmelon delt",
+        "EAN": 4032,
+        "image": "https://www.bama.no/siteassets/fotoware/2020/10/vannmelon-halv2.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Vannmelon skivet",
+        "EAN": 4031,
+        "image": "https://bilder.ngdata.no/4338/kmh/large.jpg?fallback=404&foretrekk=bedark"
     }
 ]
