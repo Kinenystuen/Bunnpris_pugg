@@ -45,12 +45,17 @@ export async function displayProducts() {
   const productImg = document.createElement("img");
 
   productCard.classList.add("card-body", "d-flex", "justify-content-center");
-  productCount.classList.add("d-flex","justify-content-end","p-2","text-small");
+  productCount.classList.add(
+    "d-flex",
+    "justify-content-end",
+    "p-2",
+    "text-small"
+  );
   productName.classList.add("card.title", "d-flex", "justify-content-center");
   productImg.classList.add("img-fluid");
 
   count += 1;
-  productCount.innerHTML = `${count}/${data.length}`
+  productCount.innerHTML = `${count}/${data.length}`;
   productName.textContent = product.name;
 
   productImg.src = product.image;
@@ -64,7 +69,6 @@ export async function displayProducts() {
   card.appendChild(productImg);
 
   // Form div area
-
   const formDivArea = document.createElement("div");
   const checkForm = document.createElement("form");
   const formLabel = document.createElement("label");
@@ -72,6 +76,7 @@ export async function displayProducts() {
   const btnDiv = document.createElement("div");
   const btnCheck = document.createElement("button");
   const btnNext = document.createElement("button");
+
 
   // Form
   formDivArea.classList.add("container");
@@ -88,7 +93,7 @@ export async function displayProducts() {
   formInput.classList.add("form-control");
 
   // Btn's
-  btnDiv.classList.add("d-flex", "justify-content-between","gap-1");
+  btnDiv.classList.add("d-flex", "justify-content-between", "gap-1");
   btnCheck.id = "checkBtn";
   btnCheck.innerText = "Check";
   btnCheck.classList.add(
@@ -102,7 +107,13 @@ export async function displayProducts() {
   btnCheck.setAttribute("type", "submit");
   btnNext.id = "nextBtn";
   btnNext.innerText = "Next";
-  btnNext.classList.add("btn", "btn-primary","btn-lg", "my-2", "justify-content-center");
+  btnNext.classList.add(
+    "btn",
+    "btn-primary",
+    "btn-lg",
+    "my-2",
+    "justify-content-center"
+  );
   btnNext.setAttribute("type", "submit");
 
   checkForm.appendChild(formLabel);
@@ -112,7 +123,6 @@ export async function displayProducts() {
   formDivArea.appendChild(checkForm);
   formDivArea.appendChild(btnDiv);
 
-  const inputNumberElement = document.getElementById("productNumber");
   const correctNumberBox = document.createElement("div");
 
   correctNumberBox.id = "correctNumberBox";
@@ -122,9 +132,16 @@ export async function displayProducts() {
 
   btnCheck.addEventListener("click", (event) => {
     event.preventDefault();
-    console.log("hello");
     handlers.setCheckForm(product);
   });
+  // Event listener for Enter key press inside the input field
+  formInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handlers.setCheckForm(product);
+    }
+  });
+
   btnNext.addEventListener("click", (event) => {
     displayProducts();
   });
@@ -160,4 +177,5 @@ export async function displayProducts() {
   productCard.appendChild(card);
   productContainer.appendChild(productCard);
   productContainer.appendChild(formDivArea);
+  formInput.focus();
 }
