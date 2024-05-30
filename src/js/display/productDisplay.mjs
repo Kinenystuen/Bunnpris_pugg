@@ -17,6 +17,7 @@ export async function displayProducts() {
     "m-3",
     "max-width-400",
     "max-height-90vh",
+    "min-vh-50",
     "overflow-auto",
     "d-flex",
     "justify-content-between"
@@ -44,7 +45,7 @@ export async function displayProducts() {
   const productName = document.createElement("h2");
   const productImg = document.createElement("img");
 
-  productCard.classList.add("card-body", "d-flex", "justify-content-center");
+  productCard.classList.add("card-body", "d-flex", "justify-content-center","align-items-center");
   productCount.classList.add(
     "d-flex",
     "justify-content-end",
