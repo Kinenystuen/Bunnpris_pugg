@@ -145,7 +145,7 @@ export async function displayProducts() {
   });
   // Event listener for checking number when 4 numbers is entered
   formInput.addEventListener("keyup", (event) => {
-    if (formInput.value.length === 4) {
+    if (formInput.value.length === product.EAN.toString().length) {
       event.preventDefault();
       handlers.setCheckForm(product);
     }
