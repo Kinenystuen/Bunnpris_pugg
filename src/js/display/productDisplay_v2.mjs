@@ -49,8 +49,22 @@ export async function displayProducts_v2() {
   const productName = document.createElement("h2");
   const productImg = document.createElement("img");
 
+  // Progress bar
+  const progressDiv = document.createElement("div");
+  const progressBar = document.createElement("div");
+  progressDiv.classList.add("progress","w-100");
+  progressBar.classList.add("progress-bar", "bg-success");
+  progressBar.setAttribute("role", "progressbar");
+  progressBar.setAttribute("aria-valuenow", count);
+  progressBar.setAttribute("aria-valuemin", 0);
+  progressBar.setAttribute("aria-valuemax", data.length);
+  progressBar.style.width = `${(count / data.length) * 100}%`;
+
+  progressBar.innerText = `${count}/${data.length}`;
+  progressDiv.appendChild(progressBar);
+
   // Div for count data
-  countDiv.classList.add("d-flex", "justify-content-between");
+  countDiv.classList.add("d-flex", "d-flex","justify-content-center", "align-content-center","align-items-center");
 
   productCard.classList.add(
     "card-body",
@@ -67,8 +81,10 @@ export async function displayProducts_v2() {
   scoreCount.classList.add(
     "d-flex",
     "justify-content-end",
+    "align-items-center",
     "p-2",
-    "text-small"
+    "text-small",
+    "gap-1"
   );
   productName.classList.add("card.title", "d-flex", "justify-content-center");
   productImg.classList.add(
@@ -79,10 +95,10 @@ export async function displayProducts_v2() {
     "w-100"
   );
 
-  scoreCount.innerHTML = `${score}/${data.length}`;
+  scoreCount.innerHTML = `${score}<i class="fa-solid fa-trophy"></i>`;
 
   count += 1;
-  productCount.innerHTML = `${count}/${data.length}`;
+  // productCount.innerHTML = `${count}/${data.length}`;
   productName.textContent = product.name;
 
   productImg.src = product.image;
@@ -91,8 +107,8 @@ export async function displayProducts_v2() {
   const card = document.createElement("div");
   card.classList.add("product-card", "w-100");
 
+  countDiv.appendChild(progressDiv);
   countDiv.appendChild(scoreCount);
-  countDiv.appendChild(productCount);
   card.appendChild(countDiv);
   card.appendChild(productName);
   card.appendChild(productImg);
