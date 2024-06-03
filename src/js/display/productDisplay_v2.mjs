@@ -1,6 +1,7 @@
 import { fetchData } from "../api/feed.mjs";
 import * as handlers from "../handlers/index.mjs";
 import { clearHTML } from "../utilitis.mjs/clearHTML.mjs";
+import { showProgressCircle } from "./progressCircle.mjs";
 
 let count = 0;
 let score = 0;
@@ -24,30 +25,32 @@ export async function displayProducts_v2() {
     "d-flex",
     "justify-content-between"
   );
+  const nextBtn = document.createElement("button");
+  nextBtn.id = "nextBtn";
+  nextBtn.innerText = "Next";
+  nextBtn.classList.add(
+    "btn",
+    "btn-primary",
+    "btn-lg",
+    "my-2",
+    "justify-content-center",
+    "mx-2",
+    "position-absolute",
+    "bottom-0",
+    "end-0"
+  );
 
   const remainingProducts = data.filter(
     (product) => !shownProducts.has(product.id)
   );
 
   if (remainingProducts.length === 0) {
-    productContainer.innerHTML = `<div class="p-3">Ikke flere produkter igjen</div>
-    <button id="btnHome" class="btn btn-primary m-3">Gå til forsiden</button>`;
-    const btnHome = document.getElementById("btnHome");
-    btnHome.addEventListener("click", (event) => {
-      window.location.href = "../index.html";
-    });
+    showProgressCircle(data.length);
     return;
   }
   const product =
     remainingProducts[Math.floor(Math.random() * remainingProducts.length)];
   shownProducts.add(product.id);
-
-  const productCard = document.createElement("div");
-  const countDiv = document.createElement("div");
-  const productCount = document.createElement("small");
-  const scoreCount = document.createElement("small");
-  const productName = document.createElement("h2");
-  const productImg = document.createElement("img");
 
   // Progress bar
   const progressDiv = document.createElement("div");
@@ -62,6 +65,13 @@ export async function displayProducts_v2() {
 
   progressBar.innerText = `${count}/${data.length}`;
   progressDiv.appendChild(progressBar);
+
+  const productCard = document.createElement("div");
+  const countDiv = document.createElement("div");
+  const productCount = document.createElement("small");
+  const scoreCount = document.createElement("small");
+  const productName = document.createElement("h2");
+  const productImg = document.createElement("img");
 
   // Div for count data
   countDiv.classList.add("d-flex", "d-flex","justify-content-center", "align-content-center","align-items-center");
@@ -98,7 +108,6 @@ export async function displayProducts_v2() {
   scoreCount.innerHTML = `${score}<i class="fa-solid fa-trophy"></i>`;
 
   count += 1;
-  // productCount.innerHTML = `${count}/${data.length}`;
   productName.textContent = product.name;
 
   productImg.src = product.image;
@@ -197,20 +206,6 @@ export async function displayProducts_v2() {
   );
   correctNumberBox.style.display = "none";
 
-  const nextBtn = document.createElement("button");
-  nextBtn.id = "nextBtn";
-  nextBtn.innerText = "Next";
-  nextBtn.classList.add(
-    "btn",
-    "btn-primary",
-    "btn-lg",
-    "my-2",
-    "justify-content-center",
-    "mx-2",
-    "position-absolute",
-    "bottom-0",
-    "end-0"
-  );
   nextBtn.addEventListener("click", (event) => {
     event.preventDefault();
     displayProducts_v2();
@@ -222,3 +217,5 @@ export async function displayProducts_v2() {
   productContainer.appendChild(correctNumberBox);
   pContainer.appendChild(nextBtn);
 }
+
+export {score};
