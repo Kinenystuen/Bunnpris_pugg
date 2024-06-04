@@ -1,0 +1,153 @@
+[
+    
+    {
+        "id": 1,
+        "name": "Berlinerbolle",
+        "EAN": 206,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Picswiss_BL-57-12.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Bringebærkube m/vanilje",
+        "EAN": 388,
+        "image": "https://bilder.ngdata.no/id/820441/large.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Croissnt",
+        "EAN": 396,
+        "image": "https://bilder.ngdata.no/id/915825/large.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Croissant Nougat",
+        "EAN": 397,
+        "image": "https://www.butterback.de/fileadmin/butterback_repository/Produktbilder/B0292-01.png"
+    },
+    {
+        "id": 5,
+        "name": "Donut m/jordbærfyll",
+        "EAN": 586,
+        "image": "https://bilder.ngdata.no/id/957492/large.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Donut m/vaniljefyll",
+        "EAN": 587,
+        "image": "https://bilder.ngdata.no/id/957774/large.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Donut white candy",
+        "EAN": 431,
+        "image": "https://bilder.ngdata.no/id/45808/large.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Fine rundstykker",
+        "EAN": 203,
+        "image": "https://scontent.fosl3-1.fna.fbcdn.net/v/t1.6435-9/142688696_2856481504632448_5373150126952812954_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=D0PUK4_E6sgQ7kNvgHwuBWd&_nc_ht=scontent.fosl3-1.fna&oh=00_AYCAVhiBMpz2lNElsEyD-C4d9svt687bAbMRweMkQI5g2w&oe=66864B7F"
+    },
+    {
+        "id": 10,
+        "name": "Kanelknute",
+        "EAN": 2245,
+        "image": "https://images.matinfo.no/images/large/202102121152228209_0.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Kløver grove kaisersemler",
+        "EAN": 318,
+        "image": "https://nettbutikk.bunnpris.no/itemImages/318.png"
+    },
+    {
+        "id": 12,
+        "name": "Grove frokostbrød",
+        "EAN": 8861,
+        "image": "https://bilder.ngdata.no/7090011155953/meny/medium.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Grove rundstykker",
+        "EAN": 203,
+        "image": "https://scontent.fosl3-1.fna.fbcdn.net/v/t1.6435-9/142396514_2856481467965785_4524226487417155640_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=D4fLHicu2ZUQ7kNvgGyrg2Z&_nc_ht=scontent.fosl3-1.fna&oh=00_AYDpM6PqAqumhstqmsffnP9X9LRcVk2i19bL4RSycrFfhg&oe=66867F02"
+    },
+    {
+        "id": 14,
+        "name": "Gourmetrundstykker",
+        "EAN": 8863,
+        "image": "/img/image.png"
+    },
+    {
+        "id": 15,
+        "name": "Hvetebolle",
+        "EAN": 704,
+        "image": "https://dk3wdpvyk5ksy.cloudfront.net/wp-content/uploads/sites/399/2022/05/09122137/102134.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Osloloff",
+        "EAN": 232,
+        "image": "https://dk3wdpvyk5ksy.cloudfront.net/wp-content/uploads/sites/399/2022/05/09122742/102137.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Pizzasnurrer",
+        "EAN": 8833,
+        "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCJgHTeHoncvZ30KpMeNyzmyoLHiNQOHK_LMrLF5aqd8G4eInA3ezjlO_6ceDqsVpnJYruN4I_XP8x5_5nXJ2v2tclo8vCVhCJUNnDSuB3I4ggnrodZpffN7gCI6Ebl7w9BdnfxXkua3pr/s1600/DSC_0030.JPG"
+    },
+    {
+        "id": 18,
+        "name": "Sjokobolle",
+        "EAN": 207,
+        "image": "https://bilder.ngdata.no/5421/meny/large.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Skillingsbolle",
+        "EAN": 707,
+        "image": "https://www.detsoteliv.no/sites/default/files/fields/images/main/img_5620.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Skolebrød",
+        "EAN": 208,
+        "image": "https://bilder.ngdata.no/7041614008849/kmh/large.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Solskinnsbolle",
+        "EAN": 206,
+        "image": "../../img/solskinnsbolle.png"
+    },
+    {
+        "id": 22,
+        "name": "Tacobolle",
+        "EAN": 391,
+        "image": "https://bilder.ngdata.no/7041614008900/kiwi/large.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Rosinbolle",
+        "EAN": 705,
+        "image": "https://bilder.ngdata.no/8141/meny/large.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Wienerbrød",
+        "EAN": 205,
+        "image": "https://www.lunsj.no/19375-large_default/wienerbrod.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Wienerpecan",
+        "EAN": 716,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tcSae7qB8ZS8qu0yc1pP3u_AvgDL1kDfyA&s"
+    },
+    {
+        "id": 26,
+        "name": "Wienerbolle",
+        "EAN": 383,
+        "image": "https://bilder.ngdata.no/2489/kmh/large.jpg?fallback=404&foretrekk=bedark"
+    }
+]
