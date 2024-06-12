@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "build": "sass src/scss:dist/css",
     "watch": "sass --watch src/scss:dist/css",
     "start": "live-server",
     "dev": "npm-run-all --parallel watch start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["live-server","npm-run-all","bootstrap"],
+  "author": "Kine Odden Nystuen",
   "license": "ISC",
-  "description": "",
+  "description": "A package with live server",
   "dependencies": {
     "bootstrap": "^5.3.3"
   },
