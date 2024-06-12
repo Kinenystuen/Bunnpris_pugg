@@ -1,6 +1,6 @@
 {
   "name": "kiki_package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "test": "",
@@ -9,7 +9,11 @@
     "start": "live-server",
     "dev": "npm-run-all --parallel watch start"
   },
-  "keywords": ["live-server","npm-run-all","bootstrap"],
+  "keywords": [
+    "live-server",
+    "npm-run-all",
+    "bootstrap"
+  ],
   "author": "Kine Odden Nystuen",
   "license": "ISC",
   "description": "A package with live server",
