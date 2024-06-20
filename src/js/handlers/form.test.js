@@ -1,5 +1,5 @@
-// form.test.js
-import { setCheckForm_v2 } from './form';
+// check.test.js
+import { setCheckForm_v2 } from './check.mjs';
 
 // Mock the DOM element
 document.body.innerHTML = '<button id="nextBtn" style="display: block;"></button>';
